@@ -1,0 +1,9 @@
+pes: [],
+    idPrefixes: []
+};
+
+const builder = new addonBuilder(manifest);
+
+serveHTTP(builder.getInterface(), { port: 7000 });
+
+console.log("Addon iniciado en http://localhost:7000/manifest.json");
